@@ -1,0 +1,39 @@
+# ============================================================================
+# Environment Configuration Template
+# ============================================================================
+# Copy this file to .env and fill in your actual values
+# NEVER commit the .env file to version control
+
+# ----------------------------------------------------------------------------
+# OpenAI Configuration
+# ----------------------------------------------------------------------------
+# Get your API key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# ----------------------------------------------------------------------------
+# Hunter.io Configuration
+# ----------------------------------------------------------------------------
+# Get your API key from: https://hunter.io/api_keys
+HUNTER_API_KEY=your-hunter-api-key-here
+
+# ----------------------------------------------------------------------------
+# Google Sheets Configuration
+# ----------------------------------------------------------------------------
+# The ID of your Google Spreadsheet (from the URL)
+# Example URL: https://docs.google.com/spreadsheets/d/SPREADSHEET_ID_HERE/edit
+GOOGLE_SPREADSHEET_ID=your-spreadsheet-id-here
+
+# ----------------------------------------------------------------------------
+# Google OAuth2 Credentials
+# ----------------------------------------------------------------------------
+# Download credentials.json from Google Cloud Console:
+# 1. Go to https://console.cloud.google.com/apis/credentials
+# 2. Create OAuth 2.0 Client ID (Desktop application)
+# 3. Download as credentials.json and place in project root
+# 
+# Required APIs to enable:
+# - Google Sheets API
+# - Gmail API
+#
+# On first run, you'll authenticate and token.json will be created automatically
+
