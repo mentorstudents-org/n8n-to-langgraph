@@ -205,15 +205,39 @@ The workflow will:
 ## Project Structure
 
 ```
-.
-├── workflow.py           # Main LangGraph workflow implementation
-├── requirements.txt      # Python dependencies
-├── .env.example         # Environment variable template
-├── .gitignore           # Git ignore rules
-├── README.md            # This file
-├── credentials.json     # Google OAuth credentials (not in git)
-└── token.json          # Generated auth token (not in git)
+validationrun/
+├── src/
+│   ├── workflow.py                      # Main LangGraph workflow implementation
+│   ├── IMPLEMENTATION_DOCUMENTATION.md  # Detailed implementation notes
+│   ├── FINAL_REVIEW_CHECKLIST.md        # Review checklist
+│   └── token.json                       # Google OAuth token (auto-generated, git-ignored)
+├── guides/
+│   ├── api-integration.md               # API integration guide
+│   ├── authentication-setup.md          # Google OAuth setup instructions
+│   ├── functional-api-implementation.md # Functional API implementation details
+│   ├── graph-api-implementation.md      # Graph API implementation details
+│   ├── output-requirements.md           # Output requirements documentation
+│   ├── paradigm-selection.md            # Paradigm selection rationale
+│   ├── project-structure.md             # Project structure documentation
+│   └── testing-and-troubleshooting.md   # Testing and troubleshooting guide
+├── README.md                            # This file - project overview and setup
+├── requirements.txt                     # Python dependencies
+├── env_template.txt                     # Environment variables template
+├── prompt.md                            # Project prompt/specifications
+├── .gitignore                           # Git ignore rules
+├── .env                                 # Environment variables (create from template, git-ignored)
+├── credentials.json                     # Google OAuth credentials (git-ignored)
+├── __pycache__/                         # Python bytecode cache (git-ignored)
+└── .vscode/                             # VS Code configuration (git-ignored)
 ```
+
+**Key Files:**
+- `src/workflow.py` - Main entry point with LangGraph workflow implementation
+- `requirements.txt` - All Python package dependencies
+- `env_template.txt` - Template for `.env` file configuration
+- `guides/` - Detailed documentation for various aspects of the project
+
+**Note:** Files marked as "git-ignored" are not tracked in version control for security reasons.
 
 ## Security Notes
 
