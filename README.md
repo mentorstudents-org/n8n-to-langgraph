@@ -225,13 +225,10 @@ validationrun/
 ├── env_template.txt                     # Environment variables template
 ├── prompt.md                            # Project prompt/specifications
 ├── .gitignore                           # Git ignore rules
-├── .env                                 # Environment variables (create from template, git-ignored)
-├── credentials.json                     # Google OAuth credentials (git-ignored)
-├── __pycache__/                         # Python bytecode cache (git-ignored)
-└── .vscode/                             # VS Code configuration (git-ignored)
 ```
 
 **Key Files:**
+
 - `src/workflow.py` - Main entry point with LangGraph workflow implementation
 - `requirements.txt` - All Python package dependencies
 - `env_template.txt` - Template for `.env` file configuration
